@@ -1,0 +1,20 @@
+2021-10-13 11:55:42,564  INFO  <module>  9  e2644529-f081-490c-b571-ac603174b4a3
+fb939b3b-7e08-4f17-92e9-0a0efb868197  2021-10-13 11:56:58,492  INFO  on_post  101  POST Request JSON body received from DMS/Alex M Tac Bot
+8feeff83-336f-4828-8915-3b40fab0bb00  2021-10-13 11:56:58,492  INFO  format_submission_data  59  Payload Created..
+eb727367-36f6-4650-8eca-5d1ef8d34d94  2021-10-13 11:56:58,492  INFO  format_submission_data  64  Optional metadata found and inserted into JSON Payload..
+e9590f45-212e-4b6c-85c7-0eb42bebbf98  2021-10-13 11:56:58,492  INFO  on_post  103  Parsing JSON Payload...
+a62ab7dd-976f-420f-be10-590b617f4f90  2021-10-13 11:56:58,492  INFO  on_post  109  Data successfully parsed..
+38df6867-6693-4a91-9d20-2f0b46a3c42a  2021-10-13 11:56:58,810  INFO  on_post  115  Posting to HS..
+9ced099e-e287-4aef-bc9a-449ab8e315b1  2021-10-13 11:56:58,810  INFO  on_post  129  POST Successful...
+f79247a7-7e93-4f9a-bc7d-c60cb5beb8ba  2021-10-13 11:56:58,810  INFO  on_post  131  Submission ID received from HS - 909999999
+70def3de-6378-4e33-a5ca-5553e2cc0645  2021-10-13 11:56:58,841  INFO  sql_add_item  25  Added submission_ID and JSON Payload to HVP Q
+30846d4e-8b64-4ca4-a997-13e26df189bf  2021-10-13 12:00:11,446  INFO  on_post  101  POST Request JSON body received from DMS/Alex M Tac Bot
+f6243b0d-a76e-40b6-8e65-777e177cca31  2021-10-13 12:00:11,446  INFO  format_submission_data  59  Payload Created..
+cdce139c-42d7-45fa-88b0-aac78f5c6910  2021-10-13 12:00:11,446  INFO  format_submission_data  64  Optional metadata found and inserted into JSON Payload..
+e90c5d2a-9b3b-4c4b-bac1-2d982293289b  2021-10-13 12:00:11,446  INFO  on_post  103  Parsing JSON Payload...
+eaa2b35e-89c9-4150-b8c2-587c1cdf89c7  2021-10-13 12:00:11,446  INFO  on_post  109  Data successfully parsed..
+6d48a703-5a2d-46fc-8c18-9e2386a85b82  2021-10-13 12:00:11,593  INFO  on_post  115  Posting to HS..
+53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:00:11,594  INFO  on_post  129  POST Successful...
+53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:00:11,594  INFO  on_post  131  Submission ID received from HS - 909999999
+53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:00:11,623  INFO  sql_add_item  25  Added submission_ID and JSON Payload to HVP Q
+53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:10:38,380  INFO  on_post  111  POST Request JSON body received from DMS/Alex M Tac Bot
