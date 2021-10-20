@@ -8,5 +8,5 @@ class AppFilter(logging.Filter):
         self.id = uuid.uuid4()
 
     def filter(self, record):
-        record.app_name = self.id
+        record.unique_id = self.id
         return True
