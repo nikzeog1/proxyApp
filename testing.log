@@ -1,21 +1,142 @@
-
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  JSON Received
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Formatting DMS Data...
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Validating mandatory JSON data...
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Data Validation Complete - JSON Contains all mandatory data
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Checking for metadata fields...
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Metadata found...formatting into Hyperscience payload
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  HS Payload formatted
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:39,945  Posting Payload to Hyperscience...
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:40,077  POST successful, responding to DMS with submission_id...
-38f1befd-1330-4b00-ab0c-5d481c41a9ec  2021-10-20 12:01:40,077  Case Complete - responded to DMS with submission_id - (123456789)
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,413  JSON Received
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,413  Formatting DMS Data...
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,413  Validating mandatory JSON data...
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,413  Data Validation Complete - JSON Contains all mandatory data
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,413  Checking for metadata fields...
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,414  Metadata found...formatting into Hyperscience payload
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,414  HS Payload formatted
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,414  Posting Payload to Hyperscience...
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,557  POST successful, responding to DMS with submission_id...
-d986c8a1-4503-441a-a11c-c4afc80c824b  2021-10-20 12:01:47,557  Case Complete - responded to DMS with submission_id - (123456789)
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,842  JSON Received
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Formatting DMS Data...
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Validating mandatory JSON data...
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Data Validation Complete - JSON Contains all mandatory data
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Checking for metadata fields...
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Metadata found...formatting into Hyperscience payload
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  HS Payload formatted
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:39,843  Posting Payload to Hyperscience...
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:40,100  POST successful, responding to DMS with submission_id...
+0a44ac5b-ae3a-4308-a034-8efa0d129003  2021-10-20 13:07:40,100  Case Complete - responded to DMS with submission_id - (123456789)
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  JSON Received
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  Formatting DMS Data...
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  Validating mandatory JSON data...
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  Data Validation Complete - JSON Contains all mandatory data
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  Checking for metadata fields...
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,382  Metadata found...formatting into Hyperscience payload
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,383  HS Payload formatted
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,383  Posting Payload to Hyperscience...
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,517  POST successful, responding to DMS with submission_id...
+7ece5877-b6b0-42ba-aac6-48ec4b5fed69  2021-10-20 13:07:48,517  Case Complete - responded to DMS with submission_id - (123456789)
+67627f1b-4499-40a5-b9d2-919e7c471d2e  2021-10-20 13:13:49,445  Exception raised while parsing JSON
+7aa7c3a2-26bb-4c6b-adda-4d5b84f1f13a  2021-10-20 13:26:17,267  Exception raised while parsing JSON
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:29,974  Request received
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:29,974  Valid JSON received
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:29,974  Formatting submission for Hyperscience...
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:29,974  HS Payload formatted
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:30,281  POST successful, responding with submission_id...
+77ef36a2-19f6-4974-b0c1-c4e7f1df0ef2  2021-10-20 14:47:30,281  Case Complete - responded with submission_id - (123456789)
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,358  Request received
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,358  Valid JSON received
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,358  Formatting submission for Hyperscience...
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,358  HS Payload formatted
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,494  POST successful, responding with submission_id...
+b715376f-aa49-4cfc-8091-c7c1ec7f2d07  2021-10-20 14:49:16,494  Case Complete - responded with submission_id - (123456789)
+cdde0e46-5aaf-47df-8f9b-453126506d82  2021-10-20 14:49:33,136  Request received
+cdde0e46-5aaf-47df-8f9b-453126506d82  2021-10-20 14:49:33,136  Exception raised while parsing JSON
+36bdd087-2f1d-4308-95a1-deb96201ee98  2021-10-20 14:49:40,339  Request received
+36bdd087-2f1d-4308-95a1-deb96201ee98  2021-10-20 14:49:40,340  Exception raised while parsing JSON
+5265dd8e-e53b-4048-b890-277ebee9540d  2021-10-20 14:49:56,399  Request received
+5265dd8e-e53b-4048-b890-277ebee9540d  2021-10-20 14:49:56,399  Valid JSON received
+5265dd8e-e53b-4048-b890-277ebee9540d  2021-10-20 14:49:56,399  Metadata found...formatting into Hyperscience payload
+66f08968-b22d-433f-9285-de97e213cd70  2021-10-20 14:50:11,552  Request received
+66f08968-b22d-433f-9285-de97e213cd70  2021-10-20 14:50:11,552  Valid JSON received
+66f08968-b22d-433f-9285-de97e213cd70  2021-10-20 14:50:11,552  Metadata found...formatting into Hyperscience payload
+28c5869a-31d8-4e5e-b9ea-4c385223bd06  2021-10-20 14:51:41,181  Request received
+28c5869a-31d8-4e5e-b9ea-4c385223bd06  2021-10-20 14:51:41,181  Valid JSON received
+28c5869a-31d8-4e5e-b9ea-4c385223bd06  2021-10-20 14:51:41,181  no metadata found
+2a5fe379-3001-421b-bd17-54f54a3f37b7  2021-10-20 15:48:46,414  Request received
+2a5fe379-3001-421b-bd17-54f54a3f37b7  2021-10-20 15:48:46,414  Valid JSON received
+2a5fe379-3001-421b-bd17-54f54a3f37b7  2021-10-20 15:48:46,414  Formatting submission for Hyperscience...
+2a5fe379-3001-421b-bd17-54f54a3f37b7  2021-10-20 15:48:46,414  Metadata found...formatting into Hyperscience payload
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,678  Request received
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,678  Valid JSON received
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,678  Formatting submission for Hyperscience...
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,678  Metadata found...formatting into Hyperscience payload
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,837  POST successful, responding with submission_id...
+a062b44d-f102-4266-b491-48090b646970  2021-10-20 15:49:14,837  Case Complete - responded with submission_id - (123456789)
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,537  Request received
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,537  Valid JSON received
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,537  Formatting submission for Hyperscience...
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,537  Metadata found...formatting into Hyperscience payload
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,683  POST successful, responding with submission_id...
+0eca7969-9c70-4f9c-82a4-1f8db5be5eeb  2021-10-20 15:49:27,683  Case Complete - responded with submission_id - (123456789)
+6a0a4058-4c40-4ef4-b9ef-8f20b85570df  2021-10-20 16:14:46,037  Request received
+6a0a4058-4c40-4ef4-b9ef-8f20b85570df  2021-10-20 16:14:46,037  Valid JSON received
+6a0a4058-4c40-4ef4-b9ef-8f20b85570df  2021-10-20 16:14:46,037  Formatting submission for Hyperscience...
+6a0a4058-4c40-4ef4-b9ef-8f20b85570df  2021-10-20 16:14:46,037  Metadata found...formatting into Hyperscience payload
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,847  Request received
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,847  Valid JSON received
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,847  Formatting submission for Hyperscience...
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,847  Metadata found...formatting into Hyperscience payload
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,985  POST successful, responding with submission_id...
+24aff601-8748-425c-b0b3-16825b6937bf  2021-10-20 16:15:05,985  Case Complete - responded with submission_id - (123456789)
+0edeb707-8176-4246-90c7-d26800cf497e  2021-10-20 16:47:15,068  Request received
+0edeb707-8176-4246-90c7-d26800cf497e  2021-10-20 16:47:15,068  Exception raised while parsing JSON
+d53a0d67-f39f-451d-9e41-5ea6910efbb3  2021-10-20 16:47:23,489  Request received
+d53a0d67-f39f-451d-9e41-5ea6910efbb3  2021-10-20 16:47:23,490  Valid JSON received
+d53a0d67-f39f-451d-9e41-5ea6910efbb3  2021-10-20 16:47:23,490  Formatting submission for Hyperscience...
+d53a0d67-f39f-451d-9e41-5ea6910efbb3  2021-10-20 16:47:23,490  Metadata found...formatting into Hyperscience payload
+8d93db7d-fbf9-4e52-bd3f-273457f08c1c  2021-10-20 16:49:16,743  Request received
+8d93db7d-fbf9-4e52-bd3f-273457f08c1c  2021-10-20 16:49:16,743  Valid JSON received
+8d93db7d-fbf9-4e52-bd3f-273457f08c1c  2021-10-20 16:49:16,743  Formatting submission for Hyperscience...
+279f99c5-8754-4288-8eea-df4086f8710a  2021-10-20 16:50:08,487  Request received
+279f99c5-8754-4288-8eea-df4086f8710a  2021-10-20 16:50:08,488  Valid JSON received
+279f99c5-8754-4288-8eea-df4086f8710a  2021-10-20 16:50:08,488  Formatting submission for Hyperscience...
+84d769a0-dd9b-43f5-811f-c41087a48d6b  2021-10-20 16:51:37,343  Request received
+84d769a0-dd9b-43f5-811f-c41087a48d6b  2021-10-20 16:51:37,344  Valid JSON received
+84d769a0-dd9b-43f5-811f-c41087a48d6b  2021-10-20 16:51:37,344  Formatting submission for Hyperscience...
+397945c7-bd9e-46f7-897d-c1a2c98fea75  2021-10-20 16:52:00,414  Request received
+397945c7-bd9e-46f7-897d-c1a2c98fea75  2021-10-20 16:52:00,415  Valid JSON received
+397945c7-bd9e-46f7-897d-c1a2c98fea75  2021-10-20 16:52:00,415  Formatting submission for Hyperscience...
+8f3f2e67-8660-4035-bf09-88b41ed5bd45  2021-10-20 16:53:42,748  Request received
+8f3f2e67-8660-4035-bf09-88b41ed5bd45  2021-10-20 16:53:42,748  Valid JSON received
+8f3f2e67-8660-4035-bf09-88b41ed5bd45  2021-10-20 16:53:42,748  Formatting submission for Hyperscience...
+fbc7b4e9-bb68-495e-93d5-657ff4895694  2021-10-20 16:54:55,245  Request received
+fbc7b4e9-bb68-495e-93d5-657ff4895694  2021-10-20 16:54:55,245  Valid JSON received
+fbc7b4e9-bb68-495e-93d5-657ff4895694  2021-10-20 16:54:55,245  Formatting submission for Hyperscience...
+4f0ca6c9-8b40-48f8-b568-f221fa6285b9  2021-10-20 16:55:14,949  Request received
+4f0ca6c9-8b40-48f8-b568-f221fa6285b9  2021-10-20 16:55:14,949  Exception raised while parsing JSON
+29f8c767-3318-4c50-95ec-95bc3ab409b0  2021-10-20 16:55:33,300  Request received
+29f8c767-3318-4c50-95ec-95bc3ab409b0  2021-10-20 16:55:33,300  Exception raised while parsing JSON
+ed7a432e-a075-4075-bf19-bb349bc808bc  2021-10-20 16:55:37,749  Request received
+ed7a432e-a075-4075-bf19-bb349bc808bc  2021-10-20 16:55:37,749  Valid JSON received
+ed7a432e-a075-4075-bf19-bb349bc808bc  2021-10-20 16:55:37,749  Formatting submission for Hyperscience...
+1b3a8b48-c77b-4331-b132-d88b0f447dad  2021-10-20 16:58:31,080  Request received
+1b3a8b48-c77b-4331-b132-d88b0f447dad  2021-10-20 16:58:31,080  Valid JSON received
+1b3a8b48-c77b-4331-b132-d88b0f447dad  2021-10-20 16:58:31,080  Formatting submission for Hyperscience...
+2bc8a866-d03f-480f-b15a-66e747ece2ce  2021-10-20 16:58:51,119  Request received
+2bc8a866-d03f-480f-b15a-66e747ece2ce  2021-10-20 16:58:51,119  Valid JSON received
+2bc8a866-d03f-480f-b15a-66e747ece2ce  2021-10-20 16:58:51,119  Formatting submission for Hyperscience...
+d9edc455-1535-4e58-9cea-4fb76d259a32  2021-10-20 16:59:08,302  Request received
+d9edc455-1535-4e58-9cea-4fb76d259a32  2021-10-20 16:59:08,303  Valid JSON received
+d9edc455-1535-4e58-9cea-4fb76d259a32  2021-10-20 16:59:08,303  Formatting submission for Hyperscience...
+ba5d3b4f-77da-4b65-a3fc-ea39b155e854  2021-10-20 17:01:52,133  Request received
+ba5d3b4f-77da-4b65-a3fc-ea39b155e854  2021-10-20 17:01:52,133  Valid JSON received
+ba5d3b4f-77da-4b65-a3fc-ea39b155e854  2021-10-20 17:01:52,133  Formatting submission for Hyperscience...
+e3312c0c-d26c-4fea-8db5-9fc9cf356620  2021-10-20 17:03:56,410  Request received
+e3312c0c-d26c-4fea-8db5-9fc9cf356620  2021-10-20 17:03:56,410  Valid JSON received
+e3312c0c-d26c-4fea-8db5-9fc9cf356620  2021-10-20 17:03:56,410  Formatting submission for Hyperscience...
+7e01f784-08c2-46c3-a343-f446f9ba744a  2021-10-20 17:11:52,097  Request received
+7e01f784-08c2-46c3-a343-f446f9ba744a  2021-10-20 17:11:52,097  Valid JSON received
+7e01f784-08c2-46c3-a343-f446f9ba744a  2021-10-20 17:11:52,097  Formatting submission for Hyperscience...
+7e01f784-08c2-46c3-a343-f446f9ba744a  2021-10-20 17:11:52,097  no metadata
+baa6fed2-f49a-40d6-8e7f-30baa97e9e36  2021-10-20 17:17:49,056  Request received
+baa6fed2-f49a-40d6-8e7f-30baa97e9e36  2021-10-20 17:17:49,056  Valid JSON received
+baa6fed2-f49a-40d6-8e7f-30baa97e9e36  2021-10-20 17:17:49,056  Formatting submission for Hyperscience...
+baa6fed2-f49a-40d6-8e7f-30baa97e9e36  2021-10-20 17:17:49,056  Metadata found...formatting into Hyperscience payload
+9afb82ef-6d5f-4671-be02-970595b0e108  2021-10-20 18:02:25,306  Request received
+9afb82ef-6d5f-4671-be02-970595b0e108  2021-10-20 18:02:25,306  Exception raised while parsing JSON
+443ce678-bc76-404d-8777-a23e5b8e2f49  2021-10-20 18:11:46,232  Request received
+443ce678-bc76-404d-8777-a23e5b8e2f49  2021-10-20 18:11:46,233  Valid JSON received
+443ce678-bc76-404d-8777-a23e5b8e2f49  2021-10-20 18:11:46,233  Formatting submission for Hyperscience...
+443ce678-bc76-404d-8777-a23e5b8e2f49  2021-10-20 18:11:46,233  Metadata found...formatting into Hyperscience payload
+3f5707d6-2e82-4b78-b5bc-a44bf439a110  2021-10-20 18:11:52,066  Request received
+3f5707d6-2e82-4b78-b5bc-a44bf439a110  2021-10-20 18:11:52,066  Exception raised while parsing JSON
+8ecc1f00-4c0b-450e-a7b2-e2a5bcacfd0e  2021-10-20 18:12:01,011  Request received
+8ecc1f00-4c0b-450e-a7b2-e2a5bcacfd0e  2021-10-20 18:12:01,011  Valid JSON received
+8ecc1f00-4c0b-450e-a7b2-e2a5bcacfd0e  2021-10-20 18:12:01,011  Formatting submission for Hyperscience...
+8ecc1f00-4c0b-450e-a7b2-e2a5bcacfd0e  2021-10-20 18:12:01,011  no metadata
+136dbf98-3bcb-4901-b7ac-128eb3cb9e01  2021-10-20 18:12:13,729  Request received
+136dbf98-3bcb-4901-b7ac-128eb3cb9e01  2021-10-20 18:12:13,729  Valid JSON received
+136dbf98-3bcb-4901-b7ac-128eb3cb9e01  2021-10-20 18:12:13,729  Data Validation Complete - Missing/Empty mandatory JSON data

@@ -7,7 +7,6 @@ import logging
 
 
 def post_payload(endpoint_url, headers, data):
-
     """POSTs Payload to HS to receive submission_id. Function will try attach response to POST to submission_id var,
     if unsuccessful, will provide exception in return value."""
 
@@ -15,21 +14,15 @@ def post_payload(endpoint_url, headers, data):
         test_quick_mocker = 'https://1hrjl6rb0l.api.quickmocker.com'  # api testing url
         response = requests.post(url=test_quick_mocker, headers=headers, data=data, timeout=30)
         submission_id = response.json()['submission_id']
-    except requests.exceptions.Timeout as timeout_err:
-        # If a request times out, a Timeout exception is raised.
-        return False, timeout_err
-    except requests.exceptions.ConnectionError as cnxn_err:
-        # In the event of a network problem (e.g. DNS failure, refused connection, etc)
-        return False, cnxn_err
-    except requests.exceptions.RequestException as err:
-        # catastrophic error. bail.
-        return False, err
+    except requests.exceptions.RequestException as req_err:
+        return False, req_err, response.status_code
+    except Exception as err:
+        return False, err, response.status_code
     else:
-        return True, submission_id
+        return True, submission_id, response.status_code
 
 
-def validate_mandatory_data(raw_data):
-
+def contains_mandatory_data(raw_data):
     """Function will return False if mandatory is empty from json or has missing data"""
 
     if 'source' not in raw_data or raw_data['source'] == "":
@@ -46,105 +39,86 @@ def validate_mandatory_data(raw_data):
 
 
 def format_submission_data(raw_data, logger):
-
     """Formats the data into correct format for HS submission creation"""
 
-    logger.info("Formatting DMS Data...")
-    base_url = "https://on-premise-server.yourcompany.com/"
+    logger.info("Formatting submission for Hyperscience...")
+    base_url = "https://on-premise-server.yourcompany.com/"  # add environment switch
     endpoint = "api/v5/submissions"
     endpoint_url = base_url + endpoint
-    auth_token = "a22d533ebaa60ae5d46b2f0ea67532a4eb8e33be"
+    auth_token = "a22d533ebaa60ae5d46b2f0ea67532a4eb8e33be"  # environment switch vault.
     headers = {'Authorization': 'Token ' + auth_token}
-
-    logger.info("Validating mandatory JSON data...")
-    if not validate_mandatory_data(raw_data):
-        return False
+    data = {
+        "document": raw_data["file-location"]
+    }
+    if "metadata" not in raw_data or raw_data["metadata"] == {}:
+        logger.info("no metadata")
     else:
-        logger.info("Data Validation Complete - JSON Contains all mandatory data")
-        data = {
-            "document": raw_data["file-location"]
-        }
-        logger.info("Checking for metadata fields...")
-        if "metadata" not in raw_data or raw_data["metadata"] == {}:
-            logger.info("Metadata missing/empty - continuing without")
-        else:
-            logger.info("Metadata found...formatting into Hyperscience payload")
-            raw_data["metadata"]["queue_name"] = f"{raw_data['source']}_{raw_data['document-type']}"
-            data["metadata"] = json.dumps(raw_data["metadata"])
-            print(json.dumps(data, indent=4, sort_keys=True))
-        return endpoint_url, headers, data
+        logger.info("Metadata found...formatting into Hyperscience payload")
+        raw_data["metadata"]["queue_name"] = f"{raw_data['source']}_{raw_data['document-type']}"
+        data["metadata"] = json.dumps(raw_data["metadata"])
+        print(json.dumps(data, indent=4, sort_keys=True))
+    return endpoint_url, headers, data
 
 
-class Logger:
+def post_request_response(request_result, hs_response, status_code):
+    if request_result == False and status_code == 500:
+        status = falcon.HTTP_500
+        content_type = falcon.MEDIA_JSON
 
-    """Initialises a logger"""
-
-    logger = logging.getLogger(__name__)
-    syslog = logging.FileHandler('testing.log')
-    formatter = logging.Formatter('%(unique_id)s  %(asctime)s  %(message)s')
-    syslog.setFormatter(formatter)
-    logger.setLevel(logging.INFO)
-    logger.addHandler(syslog)
-
-
-class HealthCheck(Logger):
-
-    def on_get(self, req, resp, logger=Logger.logger):
-
-        """Handles DMS HealthCheck GET Request"""
-        # creates unique_id for logging system, using logging.Filter and separate Class
-        logger.addFilter(proxylogger.AppFilter())
-        logger.info('test')
-        resp.status = falcon.HTTP_200
-        resp.content_type = falcon.MEDIA_TEXT
-        resp.text = (f"\nHEY THE PROXY IS ALIVE AND WELL\n")
-        logger.info('testing')
+    elif request_result == False and status_code == 400:
+        status = falcon.HTTP_400
+        content_type = falcon.MEDIA_JSON
+    else:
+        submission_id = hs_response
+        status = falcon.HTTP_202
+        content_type = falcon.MEDIA_JSON
+        text = json.dumps({"submission_id": submission_id})
+    return status, content_type, text
 
 
-class Document(Logger):
+def send_response(resp, status, content_type, text):
+    resp.status = status
+    resp.content_type = content_type
+    resp.text = text
 
-    def on_post(self, req, resp, logger=Logger.logger):
 
-        """Handles DMS Submission Data Post Request"""
+class HealthCheck(proxylogger.Logger):
+
+    def on_get(self, req, resp):
+        """Handles HealthCheck"""
+        resp.status = falcon.HTTP_204
+
+
+class Document(proxylogger.Logger):
+
+    def on_post(self, req, resp, logger=proxylogger.Logger.logger):
+
+        """Handles Hyperscience Submission"""
 
         # creates unique_id for logging system, using logging.Filter and separate Class
         logger.addFilter(proxylogger.AppFilter())
+        logger.info("Request received")
         try:
             dms_raw_data = json.load(req.bounded_stream)
         except Exception as exception:
-            logger.info("Invalid JSON Received, responding back to DMS")
-            resp.status = falcon.HTTP_400
-            resp.content_type = falcon.MEDIA_JSON
-            resp.text = json.dumps({"message": "Invalid JSON"})
+            logger.info("Exception raised while parsing JSON")
+            send_response(resp, falcon.HTTP_400, falcon.MEDIA_JSON,
+                          json.dumps({"message": "Exception raised while parsing JSON"}))
         else:
-            logger.info("JSON Received")
-            parsed_data = format_submission_data(dms_raw_data, logger)
-            if not parsed_data:
+            logger.info("Valid JSON received")
+            if not contains_mandatory_data(dms_raw_data):
                 logger.info("Data Validation Complete - Missing/Empty mandatory JSON data")
-                resp.status = falcon.HTTP_400
-                resp.content_type = falcon.MEDIA_JSON
-                resp.text = json.dumps({"message": "JSON missing mandatory data"})
+                send_response(resp, falcon.HTTP_400, falcon.MEDIA_JSON,
+                              json.dumps({"message": "JSON missing mandatory data"}))
             else:
-                logger.info("HS Payload formatted")
-                endpoint_url, headers, data = parsed_data
-                logger.info("Posting Payload to Hyperscience...")
-                post_request, hs_response = post_payload(endpoint_url, headers, data)
-                if not post_request:
-                    logger.info(f"POST failed due to {hs_response}")
-                    resp.status = falcon.HTTP_400
-                    resp.content_type = falcon.MEDIA_JSON
-                    resp.text = json.dumps({"error": resp.status})
-                else:
-                    submission_id = hs_response
-                    logger.info(f"POST successful, responding to DMS with submission_id...")
-                    resp.status = falcon.HTTP_202
-                    resp.content_type = falcon.MEDIA_JSON
-                    resp.text = json.dumps({"submission_id": submission_id})
-                    logger.info(f"Case Complete - responded to DMS with submission_id - ({submission_id})")
+                endpoint_url, headers, data = format_submission_data(dms_raw_data, logger)
+                request_result, hs_response, status_code = post_payload(endpoint_url, headers, data)
+                status, content_type, text = post_request_response(request_result, hs_response, status_code)
+                send_response(resp=resp, status=status, content_type=content_type, text=text)
 
 
 app = falcon.App()
-app.add_route('/get', HealthCheck())
-app.add_route('/post', Document())
+app.add_route('/health', HealthCheck())
+app.add_route('/icr/document', Document())
 server = Server()
 server.run_server(app)
