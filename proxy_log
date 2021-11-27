@@ -18,3 +18,104 @@ eaa2b35e-89c9-4150-b8c2-587c1cdf89c7  2021-10-13 12:00:11,446  INFO  on_post  10
 53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:00:11,594  INFO  on_post  131  Submission ID received from HS - 909999999
 53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:00:11,623  INFO  sql_add_item  25  Added submission_ID and JSON Payload to HVP Q
 53f0952c-3991-412f-80cd-9cfdd40d0106  2021-10-13 12:10:38,380  INFO  on_post  111  POST Request JSON body received from DMS/Alex M Tac Bot
+2021-10-22 12:46:01,615 INFO on_get(98) getetetete
+2021-10-22 12:46:18,127 INFO on_get(98) getetetete
+2021-10-22 12:47:28,511  INFO  getetetete
+2021-10-22 12:57:37,669  INFO  {unique_id} getetetete
+2021-10-22 12:57:59,487  INFO  36bcb829-9c82-4508-9f56-78859b1b345d getetetete
+2021-10-22 12:59:09,884  INFO  e9b29686-26a3-4c51-8099-c9444a9a6a79 JSON Data received...
+2021-10-22 12:59:21,172  INFO  dcbbcc63-bd9d-4c4d-8f51-725e603f2798 JSON Data received...
+2021-10-22 13:00:18,560  INFO  86f7db7d-7ffc-45d1-b6fd-497e95cdd18a JSON Data received...
+2021-10-22 13:00:18,560  ERROR  86f7db7d-7ffc-45d1-b6fd-497e95cdd18a Invalid JSON Data!
+Traceback (most recent call last):
+  File "C:\Users\zeonik\PycharmProjects\proxyApp\hyperscience_proxy.py", line 113, in on_post
+    raw_data = json.load(req.bounded_stream)
+  File "C:\Users\zeonik\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\zeonik\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\zeonik\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\zeonik\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 29 (char 33)
+2021-10-22 13:00:47,354  INFO  97d963cd-2f53-4a37-9f1e-c2880865e1eb JSON Data received...
+2021-10-22 13:00:47,354  INFO  97d963cd-2f53-4a37-9f1e-c2880865e1eb Invalid JSON Data!
+2021-10-22 13:01:10,229  INFO  de3d9190-ab9b-44c7-8386-8fb526838a0a JSON Data received...
+2021-10-22 13:01:10,230  INFO  de3d9190-ab9b-44c7-8386-8fb526838a0a Invalid JSON Data! = Expecting property name enclosed in double quotes: line 3 column 29 (char 33)
+2021-10-22 13:56:58,964  INFO  d175e23b-cb0c-4d06-9f9a-33d13ccc0a1f JSON Data received...
+2021-10-22 13:56:58,964  INFO  d175e23b-cb0c-4d06-9f9a-33d13ccc0a1f Invalid JSON Data! = Expecting property name enclosed in double quotes: line 3 column 29 (char 33)
+2021-10-22 13:57:09,849  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa JSON Data received...
+2021-10-22 13:57:09,849  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa Checking for mandatory data...
+2021-10-22 13:57:09,849  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa JSON contains all mandatory data
+2021-10-22 13:57:09,850  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa Formatting submission payload...
+2021-10-22 13:57:09,850  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa Metadata found and added to formatted payload
+2021-10-22 13:57:09,850  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa Submission payload formatted
+2021-10-22 13:57:09,850  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa Posting...
+2021-10-22 13:57:10,187  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa POST request complete, response and status code received.
+2021-10-22 13:57:10,187  INFO  5a71db8c-22f4-4c10-92f2-6da64b3915fa POST request complete, response and status code received.
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab JSON Data received...
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Checking for mandatory data...
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab JSON contains all mandatory data
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Formatting submission payload...
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Metadata found and added to formatted payload
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Submission payload formatted
+2021-10-22 13:58:08,249  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Posting...
+2021-10-22 13:58:08,392  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab POST request complete, response and status code received.
+2021-10-22 13:58:08,392  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Responding back to OG request...
+2021-10-22 13:58:08,392  INFO  458c4152-2085-4c93-ad30-6a0db76d48ab Response sent
+2021-10-26 15:51:07,269  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 JSON Data received
+2021-10-26 15:51:07,269  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Checking for mandatory data
+2021-10-26 15:51:07,269  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Formatting submission payload
+2021-10-26 15:51:07,269  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Metadata found and added to formatted payload
+2021-10-26 15:51:07,269  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Sending Submission to Hyperscience
+2021-10-26 15:51:07,632  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Responding back to request
+2021-10-26 15:51:17,634  INFO  8f75057d-9aa2-46ab-80ef-89634fe8b0c9 Response sent
+2021-10-26 15:52:06,639  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 JSON Data received
+2021-10-26 15:52:06,640  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Checking for mandatory data
+2021-10-26 15:52:06,640  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Formatting submission payload
+2021-10-26 15:52:06,640  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Metadata found and added to formatted payload
+2021-10-26 15:52:06,640  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Sending Submission to Hyperscience
+2021-10-26 15:52:06,787  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Responding back to request
+2021-10-26 15:52:16,792  INFO  a892392c-b96f-4c7e-9e2e-e818891e2bb4 Response sent
+2021-10-26 16:21:48,213  INFO  353978d2-a717-4e3a-8ac5-deaca8b23606 JSON Data received
+2021-10-26 16:21:48,213  INFO  353978d2-a717-4e3a-8ac5-deaca8b23606 Checking for mandatory data
+2021-10-26 16:21:48,214  INFO  353978d2-a717-4e3a-8ac5-deaca8b23606 Formatting submission payload
+2021-10-26 16:28:28,505  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe JSON Data received
+2021-10-26 16:28:28,506  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Checking for mandatory data
+2021-10-26 16:28:28,506  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Formatting submission payload
+2021-10-26 16:28:28,506  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Metadata found and added to formatted payload
+2021-10-26 16:28:28,506  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Sending Submission to Hyperscience
+2021-10-26 16:28:28,825  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Responding back to request
+2021-10-26 16:28:28,826  INFO  a8809dcc-8c33-4c6d-8674-dcec14f3bebe Response sent
+2021-10-27 14:37:29,562  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 JSON Data received
+2021-10-27 14:37:29,566  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Checking for mandatory data
+2021-10-27 14:37:29,566  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Formatting submission payload
+2021-10-27 14:37:29,566  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Metadata found and added to formatted payload
+2021-10-27 14:37:29,566  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Sending Submission to Hyperscience
+2021-10-27 14:37:29,877  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Responding back to request
+2021-10-27 14:37:29,877  INFO  a538bbc9-0f67-478b-8da9-82c962e8d871 Response sent
+2021-10-27 14:50:41,751  INFO  07f1101e-0158-4916-8df0-8401452f0c8d JSON Data received
+2021-10-27 14:50:41,751  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Checking for mandatory data
+2021-10-27 14:50:41,751  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Formatting submission payload
+2021-10-27 14:50:41,751  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Metadata found and added to formatted payload
+2021-10-27 14:50:41,751  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Sending Submission to Hyperscience
+2021-10-27 14:50:41,993  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Responding back to request
+2021-10-27 14:50:41,994  INFO  07f1101e-0158-4916-8df0-8401452f0c8d Response sent
+2021-10-27 15:00:08,091  INFO  ec3bff72-a2d7-444d-9e59-0ee23bddc184 JSON Data received
+2021-10-27 15:00:08,092  INFO  ec3bff72-a2d7-444d-9e59-0ee23bddc184 Checking for mandatory data
+2021-10-27 15:00:08,092  INFO  ec3bff72-a2d7-444d-9e59-0ee23bddc184 Formatting submission payload
+2021-10-27 15:00:08,092  INFO  ec3bff72-a2d7-444d-9e59-0ee23bddc184 Metadata found and added to formatted payload
+2021-10-27 15:00:08,092  INFO  ec3bff72-a2d7-444d-9e59-0ee23bddc184 Sending Submission to Hyperscience
+2021-10-27 15:03:25,675  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d JSON Data received
+2021-10-27 15:03:25,675  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Checking for mandatory data
+2021-10-27 15:03:25,675  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Formatting submission payload
+2021-10-27 15:03:25,675  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Metadata found and added to formatted payload
+2021-10-27 15:03:25,675  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Sending Submission to Hyperscience
+2021-10-27 15:03:25,955  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Responding back to request
+2021-10-27 15:03:25,955  INFO  b74767b7-d175-4033-9ce5-3aa9e48ba88d Response sent
+2021-10-27 15:03:49,044  INFO  8b9b6cc0-78d2-49e9-ba18-44836e65ffd5 JSON Data received
+2021-10-27 15:03:49,045  INFO  8b9b6cc0-78d2-49e9-ba18-44836e65ffd5 Checking for mandatory data
+2021-10-27 15:03:49,045  INFO  8b9b6cc0-78d2-49e9-ba18-44836e65ffd5 Formatting submission payload
+2021-10-27 15:03:49,045  INFO  8b9b6cc0-78d2-49e9-ba18-44836e65ffd5 Metadata found and added to formatted payload
+2021-10-27 15:03:49,045  INFO  8b9b6cc0-78d2-49e9-ba18-44836e65ffd5 Sending Submission to Hyperscience
